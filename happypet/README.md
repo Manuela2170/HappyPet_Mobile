@@ -152,18 +152,21 @@ classDiagram
     - Aprovar adoções
 
 ```mermaid
-
 graph TD
     A[Usuário] --> B[Buscar Animais]
     A --> C[Solicitar Adoção]
     A --> D[Realizar Doação]
     A --> E[Comprar Produtos]
-    
+```
+```mermaid
+graph TD
     F[Administrador] --> G[Gerenciar Animais]
     F --> H[Gerenciar Usuários]
     F --> I[Aprovar Adoções]
     F --> J[Gerar Relatórios]
-    
+```
+```mermaid
+graph TD
     K[Abrigo Parceiro] --> L[Cadastrar Animais]
     K --> M[Atualizar Status]
     K --> N[Gerenciar Estoque]
@@ -175,11 +178,17 @@ graph TD
     C --> R[Preencher Formulário]
     C --> S[Aguardar Aprovação]
     C --> T[Receber Atualizações]
-    
+
+ 
     D --> U[Doação Financeira]
     D --> V[Doação de Materiais]
     D --> W[Doação de Ração]
 ```
+   
+   
+    
+   
+
 
 3. ### Diagrama de Fluxo
 Determian o Caminho que um ator percorre para realizar uma ação
@@ -187,6 +196,7 @@ Determian o Caminho que um ator percorre para realizar uma ação
 - Ação de Login
 
 ```mermaid
+graph TD
     A[Início] --> B{Tela de Login}
     B --> C[Inserir email e senha]
     C --> D{Validar Credenciais}
@@ -213,6 +223,7 @@ Determian o Caminho que um ator percorre para realizar uma ação
 - Ação do Processo de Doação
 
 ```mermaid
+graph TD
     A[Início] --> B{Selecionar Tipo de Doação}
     B -->|Financeira| C[Informar Valor]
     B -->|Produtos| D[Selecionar Itens]
